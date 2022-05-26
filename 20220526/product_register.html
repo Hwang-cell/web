@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>product_register_title</title>
+    <script defer src = "product_register.js"></script>
+
+  </head>
+  <body>
+    <form method="post" action="" id="informaiton_id">
+      information_1<input type="text" name="information_1" id="information_1_id"><br>
+      information_2<input type="text" name="information_2" id="information_2_id"><br>
+      information_3<input type="text" name="information_3" id="information_3_id"><br>
+      information_4<input type="text" name="information_4" id="information_4_id"><br>
+
+      information_X<input type="text" name="information_X" id="information_X_id"><br>
+
+      <input type="button" onclick="MyInformation.set_information(); MyInformationX.set_information();" value="send all information">
+      <input type="button" onclick="MyInformation.get_information(); MyInformationX.get_information();" value="get all information">
+    </form>
+    <input type="button" onclick="MyInformation.get_information(); MyInformationX.get_information();" value="get all information">
+    <h2 id ="display_1">display 1</h2>
+    <h2 id ="display_2">display 2</h2>
+    <h2 id ="display_3">display 3</h2>
+    <h2 id ="display_4">display 4</h2>
+    <h2 id ="display_X">display X</h2>
+  </body>
+</html>

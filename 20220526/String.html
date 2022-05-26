@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      var test_01 = "Hello World!";
+      var test_02 = "Galaxy";
+      var test_03 = "TIME";
+      var result_01 = test_01.toLowerCase();
+      var result_02 = test_01.toUpperCase();
+      var result_03 = test_01.length;
+      var result_04 = test_01.replace("Hello", "Goodbye");
+
+      var result_100 = Boolean(1>2); //false
+      document.write("<h1>"+result_100+"</h1>");
+      var result_101 = Boolean(100>2); //true
+      document.write("<h1>"+result_101+"</h1>");
+      var arr_100 = new Array();
+      arr_100[0] = result_100;
+      arr_100[1] = result_101;
+      document.write(arr_100[0]);
+      document.write(arr_100[1]);
+
+      var number = "One, Two, Three, Four, Five";
+      var arr = number.split(', ');
+      for (i=0; i<arr.length; i++){
+        document.writeln(i + '-' + arr[i] + '<br>');
+      }
+
+      document.writeln(test_01);
+      document.writeln(test_02);
+      document.writeln(test_03);
+      document.writeln(result_01);
+      document.writeln(result_02);
+      document.writeln(result_03);
+      document.writeln(result_04);
+
+    </script>
+  </head>
+  <body>
+
+
+  </body>
+</html>

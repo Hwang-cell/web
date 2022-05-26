@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      var MyProduct = {
+        product_name : "",
+        product_maker : "",
+        product_exp : new Date(),
+        product_price : 0
+
+
+
+      }
+
+
+
+      var Product = {product_name: "SmartPhone", product_maker: "Samsung", product_exp: "2023, 5, 23", product_price: 985000, putdata:function(){
+        document.write(this.product_name + this.product_maker + this.product_exp + this.product_price);
+      }}
+      var Product2 = {product_name: "Labtop", product_maker: "Lenovo", product_exp: "2024, 5, 23", product_price:650000, putdata:function(){
+        document.write(this.product_name + this.product_maker + this.product_exp + this.product_price);
+      }}
+
+      var MyArray = new Array();
+      MyArray[0] = Product;
+      MyArray[1] = Product2;
+
+      for(i=0; i<MyArray.length; i++){
+        MyArray[i].putdata();
+      }
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

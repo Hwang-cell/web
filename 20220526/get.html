@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" defer src="set.html">
+  <head>
+    <meta charset="utf-8">
+    <title>javascript_car_object title</title>
+
+  </head>
+  <body>
+    <h1>
+        Javascript Object Test
+    </h1>
+    <button type="button" name="button" onclick="alert('aa')">alert aa</button>
+    <button type="button" name="button" onclick="show()">change p tag</button>
+    <button type="button" name="button" onclick="setinfo("KIA", 140, "Blue")">setinfo</button>
+    <button type="button" name="button" onclick="putinfo()">putinfo</button>
+    <button type="button" name="button" onclick="putinfoget()">putinfoget</button>
+    <p id="display">aa(innerHTML)</p>
+    <p>body p tag</p>
+
+    <form method="post" action="" id="car_info">
+      자동차모델<input type="text" name="car_model" id="car_model_id"><br>
+      속도<input type="text" name="car_hp" id="car_hp_id"><br>
+      색깔<input type="text" name="car_color" id="car_color_id"><br>
+      <input type="button" onclick="putinfoget()" value="전송">
+    </form>
+    <h2 id ="dis1">dis11</h2>
+    <h2 id ="dis2">dis22</h2>
+    <h2 id ="dis3">dis33</h2>
+
+  </body>
+</html>

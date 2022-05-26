@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" defer src="get.html">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      var MyCar = {
+        model : "Hyundai",
+        hp : 160,
+        color : "Red",
+        brake : function(){this.speed-=10; alert('속도가 10 감속된다');},
+        accel : function(){this.speed+=10; alert("속도가 10 가속된다");},
+        setinfo : function(m, h, c){MyCar.model=m; MyCar.hp=h; MyCar.color=c;},
+        putinfo : function(){document.write(this.model+" "+this.hp+" "+this.color);},
+        putinfoinner : function(){
+          document.getElementById("dis1").innerHTML=MyCar.model;
+          document.getElementById("dis2").innerHTML=MyCar.hp;
+          document.getElementById("dis3").innerHTML=MyCar.color;}
+      }
+      function putinfoget(){
+        var car_info_model = document.getElementById("car_model_id").value;
+        var car_info_hp = document.getElementById("car_hp_id").value;
+        var car_info_color = document.getElementById("car_color_id").value;
+        //document.getElementById("dis1").innerHTML=car_info_model;
+        //document.getElementById("dis2").innerHTML=car_info_hp;
+        //document.getElementById("dis3").innerHTML=car_info_color;
+
+        MyCar.model =car_info_model;
+        MyCar.hp =car_info_hp;
+        MyCar.color =car_info_color;
+        MyCar.putinfoinner();
+      }
+      MyCar.accel(); MyCar.brake();
+      MyCar.putinfo();
+      MyCar.setinfo("KIA", 180, "Blue");
+      MyCar.putinfo();
+      MyCar.putinfo();
+      document.write("script ");
+      document.write("body printing");
+      function show(){
+        document.getElementById("display").innerHTML ="bb";
+      }
+
+
+    </script>
+  </head>
+  <body>
+    <form method="post" action="get.html" id="car_info">
+      자동차모델<input type="text" name="car_model" id="car_model_id"><br>
+      속도<input type="text" name="car_hp" id="car_hp_id"><br>
+      색깔<input type="text" name="car_color" id="car_color_id"><br>
+      <input type="submit" value="전송">
+    </form>
+
+
+  </body>
+</html>
